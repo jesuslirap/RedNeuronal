@@ -1,0 +1,128 @@
+/* Layout: Header-Content-Footer */
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  border: 1px dotted grey;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+/* - Layout: Header-Content-Footer */
+
+/* App general styles */
+
+.App {
+  text-align: center;
+}
+
+.App-header,
+.App-content,
+.App-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header,
+.App-footer {
+  background-color: #282c34;
+}
+
+.App-header {
+  min-height: 10vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  background-color: darkgrey;
+}
+
+/* - App general styles */
+
+/* Content specific styles */
+
+.content .container {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.content .container-column {
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .content .container {
+    flex-direction: column;
+  }
+}
+
+/* - Content specific styles */
+
+/* Form styles */
+
+form,
+.input-box {
+  display: flex;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+form {
+  flex-direction: column;
+}
+
+.input-box {
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.input-box-column {
+  flex-direction: column;
+}
+
+.input-box,
+.input-item {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.input-item {
+  overflow: visible;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* - Form styles */
