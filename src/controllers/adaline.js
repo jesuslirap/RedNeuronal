@@ -29,6 +29,7 @@ export const forward = (x, w, f, y) => {
     let v = [];
     let e = [];
 
+    console.log("x: ", x);
     x.forEach(element => {
         a = element;
         w.forEach(layer => {

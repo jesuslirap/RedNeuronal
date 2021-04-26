@@ -126,3 +126,26 @@ form {
 }
 
 /* - Form styles */
+
+/* Legend Styles */
+
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: block;
+  float: left;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--color);
+  font-size: 150%;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}

@@ -71,8 +71,7 @@ let colors = {
     green: "#00ff00",
     blue: "#0000ff",
     purple: "ff00ff",
-    yellow: "#00ffff",
-    black: "#000000",
+    yellow: "#00ffff"
 };
 
 export const getColor = (index) => {

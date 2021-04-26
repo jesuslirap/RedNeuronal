@@ -5,23 +5,14 @@ import Parameters from './Parameters.js';
 const AppContent = (props) => {
     return (
         <div className="container">
-            <div className="container container-column">
             <div>
                 <ChartScatter
                     data={props.data}
                     domain={props.domain}
                     lines={props.lines}
+                    classes={props.classes}
                     handleAddPoints={props.handleAddPoints}
                 />
-            </div>
-
-            <div className="chart">
-                <Chart
-                    data={props.data}
-                    domain={props.domain}
-                    lines={props.lines}
-                />
-            </div>
             </div>
 
             <div className="parameters grow-2">

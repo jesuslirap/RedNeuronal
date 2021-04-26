@@ -353,6 +353,7 @@ class App extends React.Component {
             learning_rate={this.state.learning_rate}
             error={this.state.error}
             epoch={this.state.epoch}
+            classes={this.state.classes}
             headerPatterns={this.state.headerPatterns}
             handleHeaderPatterns={this.handleHeaderPatterns}
             handlePatterns={this.handlePatterns}
